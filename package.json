@@ -4,7 +4,7 @@
   "description": "A chat app using WebSockets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
