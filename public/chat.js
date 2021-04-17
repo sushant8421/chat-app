@@ -12,7 +12,7 @@ var message = document.getElementById('message'),
 
 message.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
-    if (event.key === 13) {
+    if (event.keyCode === 13) {
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
