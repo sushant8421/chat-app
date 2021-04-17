@@ -9,16 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/websockets-playlist.git"
+    "url": "git+https://github.com/sushant8421/chat-app.git"
   },
-  "author": "The Net Ninja",
+  "author": "Sushant Yadav",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamshaunjp/websockets-playlist/issues"
-  },
-  "homepage": "https://github.com/iamshaunjp/websockets-playlist#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "npm": "^7.10.0",
     "path": "^0.12.7",
     "socket.io": "^1.7.3"
   },
