@@ -1,5 +1,5 @@
 {
-  "name": "Gamezy Chat-App",
+  "name": "gamezy-chat-app",
   "version": "1.0.0",
   "description": "A chat app using WebSockets",
   "main": "index.js",
