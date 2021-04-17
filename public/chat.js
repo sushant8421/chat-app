@@ -1,18 +1,19 @@
 // Make connection
-// let url = 'ws://localhost:3000' ;
 var socket = io.connect(window.location.hostname);
 
 // Query DOM
 var message = document.getElementById('message'),
-    handle = document.getElementById('handle'),
-    btn = document.getElementById('send'),
-    output = document.getElementById('output'),
-    feedback = document.getElementById('feedback');
+      handle = document.getElementById('handle'),
+      btn = document.getElementById('send'),
+      output = document.getElementById('output'),
+      feedback = document.getElementById('feedback');
 
 // Emit events
 
 message.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
+        console.log("enter key pressed..");
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
