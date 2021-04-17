@@ -12,8 +12,7 @@ var message = document.getElementById('message'),
 
 message.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
-    if (event.keyCode === 13) {
-        console.log("enter key pressed..");
+    if (event.key === 13) {
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
@@ -36,7 +35,11 @@ message.addEventListener('keypress', function(){
 // Listen for events
 socket.on('chat', function(data){
     feedback.innerHTML = '';
-    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+    if (data.message.length > 0) {
+        output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+        var chatWindow = document.getElementById('chat-window');
+        chatWindow.scrollTo(0, output.scrollHeight);
+    }
 });
 
 socket.on('typing', function(data){
