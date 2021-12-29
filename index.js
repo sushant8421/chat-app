@@ -12,6 +12,7 @@ var allowCrossDomain = function(req, res, next) {
     next();
 }
 
+// middlewares
 app.use(allowCrossDomain); 
 
 const PORT = process.env.PORT || 3000;
